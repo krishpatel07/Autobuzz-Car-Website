@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header-1">
+
+        <a href="#" class="logo">AUTO<span>BUZZ.com</span></a>
+
+        <form action="">
+            <input id="search" type="search" placeholder="search here">
+            <label for="search" class="fas fa-search"></label>
+        </form>
+
+       <div>
+            <button id="login-btn" type="button" class="btn">Login</button>
+            <button id="signup-btn" type="button" class="btn">Signup</button>
+        </div>
+        </div>
+       
+        <div class="header-2"> 
+            <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <!-- navbar section -->
+        <nav class="navbar">
+            
+            <ul>
+           <li><a href="..\car final\car final.html">Home</a></li>
+            <li><a href="#vehicles">Cars</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#featured">featured</a></li>
+            <li><a href="#parts">AutoParts</a></li>
+            <li><a href="#reviews">reviews</a></li>
+            <li><a href="#contact">About Us</a></li> 
+            <li><a href="#contact">Contact Us</a></li> 
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="background">
+        <img src=".\img\171.jpg" alt="">
+    </div>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = ".\img\tharfront.jpg" alt = "car image">
+              <img src = ".\img\tharrear.jpg" alt = "car image">
+              <img src =".\img\tharside.jpg" alt = "car image">
+              <img src = ".\img\tharinterior.jpg" alt = "car image">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = ".\img\tharfront.jpg" alt = "car image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = ".\img\tharrear.jpg" alt = "car image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = ".\img\tharside.jpg" alt = "car image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = ".\img\tharinterior.jpg" alt = "car image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">Mahindra Thar</h2>
+          <a href = "https://auto.mahindra.com/suv/thar" target="_blank" class = "product-link">visit auto/mahindra.com</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+          <div class = "product-price">
+            <p class = "new-price">Ex-Showroom Price: <span>Rs. 10.98 - 16.94 Lakh*</span></p>
+            <p class = "new-price">On-Road Price: <span>Rs. 13.04 - 18.97 Lakh*</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about Car: </h2>
+            <p>The Mahindra Thar has 2 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 2184 cc and 1497 cc while the Petrol engine is 1997 cc . It is available with Automatic & Manual transmission.</p>
+            <p>Depending upon the variant and fuel type the Thar has a mileage of 15.2 kmpl & Ground clearance of Thar is 226mm. The Thar is a 4 seater 4 cylinder car and has length of 3985mm, width of 1855mm and a wheelbase of 2450mm.</p>
+            <ul>
+              <li>Color: <span>White, Red, Aqua-Marine, Black, Grey</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>SUV</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            <button type = "button" class = "btn">
+              Buy Now<i class = "fas fa-shopping-cart"></i>
+            </button>
+            <button  type = "button" class = "btn"><a href="..\car final\mahindra-thar-lx-4-str-convert-top-at-brochure.pdf" target="_blank">View Brochure</a></button>
+            <button type = "button" class = "btn">Compare</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script1.js"></script>
+  </body>
+</html>

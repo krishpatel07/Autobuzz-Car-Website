@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBuzz.com</title>
+    
+
+<link rel="stylesheet" href="newstyle.css">
+
+
+ <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   
+    <header class="header" id="home">
+        <div class="header-1">
+
+        <a href="#" class="logo">AUTO<span>BUZZ.com</span></a>
+
+        <form action="">
+            <input id="search" type="search" placeholder="search here">
+            <label for="search" class="fas fa-search"></label>
+        </form>
+
+       <div>
+            <button id="login-btn" type="button" class="btn">Login</button>
+            <button id="signup-btn" type="button" class="btn">Signup</button>
+        </div>
+        </div>
+       
+        <div class="header-2"> 
+            <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <!-- navbar section -->
+        <nav class="navbar">
+            
+            <ul>
+           <li><a href="#home">Home</a></li>
+            <li><a href="#vehicles">Cars</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#parts">AutoParts</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#about">About Us</a></li> 
+            <li><a href="#contact">Contact Us</a></li> 
+            </ul>
+        </nav>
+        </div>
+        <img class="home-parallax" data-speed="5" src=".\Background-home.png" alt="">
+        <div class="text-container">
+            <h1 style="font-size: 6.0vw;">FIND YOUR CAR</h1>
+            <h2 >your way, only at AUTOBUZZ.com</h2><br>
+            <p>"Where Car Dreams Become Reality"</p><br>
+            <a href="#" class="btn home-parallax" data-speed="9">DISCOVER NOW</a>
+        </div> 
+    </header>
+
+    <div class="login-form-container">
+        <span class="fa-solid fa-xmark" id="close-login-btn"></span>
+        <form action="" id="form1">
+            <h3>user login</h3>
+            <div class="input-control">
+            <label>Enter Email:</label>
+            <input type="text" name="email" placeholder="Enter your Email" id="email1">
+            <small>Error Messsage</small>
+            </div>
+            <div class="input-control">
+             <label>Enter Password:</label>   
+            <input type="password" name="password" placeholder="Password" id="password1">
+            <small>Error Message</small>
+            </div>
+            <p>forget your password <a href="#">click here</a></p>
+            <input type="submit" value="Login now" id="submit" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">Google</a>
+                <a href="#" class="btn">Facebook</a>
+            </div>
+            <p>Don't Have an Account! <a href="#">Create One</a></p>
+        </form>
+    </div>
+
+    <!--Sign Up-->
+    <div class ="signup-form-container">
+       
+        <span class="fa-solid fa-xmark" id="close-signup-btn"></span>
+
+        <form action="" id="lform">
+            <h3 style="text-align: center;">sign up</h3>
+            <div class="input-control">
+            <label>Full Name</label>
+            <input type="name" placeholder="Full Name" id="username">
+            <small>Error Message</small>
+            </div>
+            <div class="input-control">
+            <label>Email:</label>
+            <input type="text" placeholder="Email" id="email">
+            <small>Error Message</small>
+            </div>
+            <div class="input-control">
+            <label>Password:</label>
+            <input type="password" placeholder="Password" id="password">
+            <small>Error Message</small>
+            </div>
+            <div class="input-control">
+            <label>Mobile Number:</label>
+            <input type="text" placeholder="Mobile Number" id="number">
+            <small>Error Message</small>
+            </div>
+            <p><a href="#">Get OTP</a></p>
+            <label for="dob">Date of Birth:</label>
+            <div class="input-control">
+            <input type="date" name="dob" id="dateofbirth"><br> 
+            <small>Error Message</small>
+            </div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male 
+            <input type="radio" name="gender" value="Female"> Female 
+            <input type="radio" name="gender" value="Other"> Other<br><br>
+            <input type="submit" value="Signup now" id="submit" class="btn">
+            <p>Already Have an Account? <a href="#">Sign in</a></p>
+        </form>
+
+    </div>
+
+    <!-- icon section starts -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fa-solid fa-house"></i>
+            <div class="content">
+                <h3>10+</h3>
+                <p>Branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>1000+</h3>
+                <p>Cars Sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-users"></i>
+            <div class="content">
+                <h3>300+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>200+</h3>
+                <p>New Cars</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- icon section end -->
+
+     <!-- vehical section starts-->
+    <section class="vehical" id="vehicles">
+
+        <h1 class="heading">Top Selling <span>Cars</span></h1>
+
+        <div class="slider">
+
+            <div class="wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="preBtn"></div>
+
+                <div class="wraper-box">
+                    <div class="box active" id="car-img1">
+                        <img src=".\img\tharpng-removebg-preview.png" alt="">
+                        <div class="content">
+                            <h3>Mahindra Thar</h3>
+                            <div class="price"><span>price: </span>Rs 10.98 Lakh*</div>
+                            <p style="text-align: left;">
+                                <span class="fa-solid fa-circle"></span>1497 cc - 2184 cc<br>
+                                <span class="fa-solid fa-circle"></span>4x4<br>
+                                <span class="fa-solid fa-circle"></span>Diesel/Petrol<br> 
+                                <span class="fa-solid fa-circle"></span>15.2kmpl
+                            </p>
+                            <a href="..\car final\detail.html" target="_blank" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img2">
+                        <img src=".\img\vernapng.webp" alt="">
+                        <div class="content">
+                            <h3>Hyundai Verna</h3>
+                            <div class="price"><span>price: </span>Rs. 10.98 Lakh*</div>
+                            <p style="text-align: left;">
+                                <span class="fa-solid fa-circle"></span>1482 cc - 1497 cc
+                                <span class="fa-solid fa-circle"></span>Manual/Automatic
+                                <span class="fa-solid fa-circle"></span>Petrol<br>
+                                <span class="fa-solid fa-circle"></span>18.6 - 20.6 kmpl
+                            </p>
+                            <a href="..\car final\detail1.html" target="_blank" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img3">
+                        <img src=".\img\innovapng-removebg-preview.png" alt="">
+                        <div class="content">
+                            <h3>Toyota Innova Crysta</h3>
+                            <div class="price"><span>price: </span>Rs. 19.99 lakh*</div>
+                            <p style="text-align: left;">
+                                <span class="fa-solid fa-circle"></span>2393 cc<br>
+                                <span class="fa-solid fa-circle"></span>Manual<br>
+                                <span class="fa-solid fa-circle"></span>Diesel<br>
+                                <span class="fa-solid fa-circle"></span>7-8 Seater
+                            </p>
+                            <a href="..\car final\detail2.html" target="_blank" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img4">
+                        <img src=".\img\bmwpng-removebg-preview.png" alt="">
+                        <div class="content">
+                            <h3>BMW i7</h3>
+                            <div class="price"><span>price: </span>Rs. 1.95 cr*</div>
+                            <p style="text-align: left;">
+                                <span class="fa-solid fa-circle"></span>590-625 km/charge<br>
+                                <span class="fa-solid fa-circle"></span>Automatic<br>
+                                <span class="fa-solid fa-circle"></span>Electric(EV)<br>
+                                <span class="fa-solid fa-circle"></span>536.40bhp
+                            </p>
+                            <a href="..\car final\detail3.html" target="_blank" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img5">
+                        <img src=".\img\xuvpng.png" alt="">
+                        <div class="content">
+                            <h3>Mahindra XUV700</h3>
+                            <div class="price"><span>price: </span>Rs. 14.03 lakh*</div>
+                            <p style="text-align: left;">
+                                <span class="fa-solid fa-circle"></span>1999 cc - 2198 cc
+                                <span class="fa-solid fa-circle"></span>FWD / AWD<br>
+                                <span class="fa-solid fa-circle"></span>Diesel/Petrol<br>
+                                <span class="fa-solid fa-circle"></span>5,7 Seater
+                            </p>
+                            <a href="..\car final\detail4.html" target="_blank" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img6">
+                        <img src=".\img\car1.png" alt="">
+                        <div class="content">
+                            <h3>Porsche 911 Carrera</h3>
+                            <div class="price"><span>price: </span>Rs. 1.86 cr*</div>
+                            <p style="text-align: left;">
+                                <span class="fa-solid fa-circle"></span> 379.5bhp<br>
+                                <span class="fa-solid fa-circle"></span> automatic<br>
+                                <span class="fa-solid fa-circle"></span> petrol<br>
+                                <span class="fa-solid fa-circle"></span> 10.64 kmpl
+                            </p>
+                            <a href="..\car final\detail5.html" target="_blank" class="btn">check out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext " id="nextBtn"></div>
+            </div>
+
+
+            <div class="activeCircle">
+                <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+                <div class="fa-regular fa-circle" id="forCar-img2"></div>
+                <div class="fa-regular fa-circle" id="forCar-img3"></div>
+                <div class="fa-regular fa-circle" id="forCar-img4"></div>
+                <div class="fa-regular fa-circle" id="forCar-img5"></div>
+                <div class="fa-regular fa-circle" id="forCar-img6"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- vehical section end-->
+
+    
+    <!-- services section starts -->
+    <section class="services" id="services">
+
+        <h1 class="heading">Our <span>Services</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-car"></i>
+                <h3>Car selling</h3>
+                <p>Sell your cars with us for guaranteed best prices and services</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>parts repair</h3>
+                <p>Repair and Replacement with Genuine auto Parts at reasonable costing.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>car insurance</h3>
+                <p>Online Car Insurance Policy in Just few Easy Steps. No Paperwork - Only Smart Work</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Car battery replacement service in no time for any car make or model.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>guaranteed genuine oil change at very low costing and time.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>24/7 Customer service - Call us toll-free anytime day or night.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- services section end -->
+
+    <!-- featured section starts -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>Luxury</span> cars</h1>
+
+        <div class="featured-slider">
+
+            <div class="featured-wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="fPreBtn"></div>
+
+                <div class="featured-wrapper2">
+                    <div class="featured-wrapper-box">
+
+                        <div class="box active">
+                            <img src="./img/car7.png" alt="">
+                            <h3>Lamborghini Urus</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 3.52 - 4.22 cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car8.png" alt="">
+                            <h3>BMW M8</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 2.44 - 2.6 Cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car9.png" alt="">
+                            <h3>Aston Martin DB12</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 4.59 - 4.8 cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car10.png" alt="">
+                            <h3>Ford Mustang GT</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 74.61 Lakh*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car11.png" alt="">
+                            <h3>Spyker C8 Preliator</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 3.61 - 4.07 cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car12.png" alt="">
+                            <h3>Mercedes-Benz AMG GT</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 2.27 - 2.71 Cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car13.png" alt="">
+                            <h3>Rolls Royce Wraith</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 6.22 - 7.21 cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/car14.png" alt="">
+                            <h3>Lamborghini Aventador</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 5.01 - 5.79 cr*</div>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="fNextBtn"></div>
+            </div>
+
+            <div class="fActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- featured section end -->
+     <!--parts section-->
+     <section class="parts" id="parts">
+        <div class="heading">
+            <h1 class="heading"><span>Auto</span> Parts</h1>
+        </div>
+        <!--parts container-->
+        <div class="parts-container container">
+            <!--Box 1-->
+
+            <div class="box">
+                <img src=".\img\part1.png" alt="">
+                <h3>Car V8 Engine</h3>
+                <span>Rs. 20000-1 Lacs.</span>
+                <i class='bx bxs-star'>(200 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 2-->
+
+               <div class="box">
+                <img src=".\img\part2.png" alt="">
+                <h3>Piston Gear Parts</h3>
+                <span>Rs. 50000 -2 Lacs. </span>
+                <i class='bx bxs-star'>(150 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 3-->
+              
+               <div class="box">
+                <img src=".\img\part6.png" alt="">
+                <h3>Tubeless Tyres</h3>
+                <span>Rs. 5000(1 pcs)</span>
+                <i class='bx bxs-star'>(500 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 4-->
+
+               <div class="box">
+                <img src=".\img\part4.png" alt="">
+                <h3>Oil Filters</h3>
+                <span>Rs. 600(1 pcs)</span>
+                <i class='bx bxs-star'>(250 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 5-->
+
+               <div class="box">
+                <img src=".\img\part5.png" alt="">
+                <h3>Car Alternator</h3>
+                <span>Rs. 32000</span>
+                <i class='bx bxs-star'>(125 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 6-->
+               
+               <div class="box">
+                <img src=".\img\part3.png" alt="">
+                <h3>miscellaneous parts</h3>
+                <span>Rs. (As per component)</span>
+                <i class='bx bxs-star'>(600 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View More</a>
+            </div>
+        </div>
+     </section>
+
+      <!--About Us-->
+    <section class="about-us" id="about">
+        <h1 class="heading">About <span>Us</span></h1>
+
+        <div class="about">
+          <img src=".\img\about.png" class="pic">
+          <div class="text">
+            <h2>AUTOBUZZ.com</h2>
+            <h5>Car Buying &<span> Selling Website </span></h5>
+              <p>Welcome to AutoBuzz.com, your premier destination for all things automotive. We are not just another 
+                car selling website; we are your trusted partner on the road to finding your perfect vehicle.<br>
+                 At AutoBuzz.com, we believe that buying a car should be an exciting and enjoyable experience, not a daunting task. 
+                 That's why we have designed our platform with you, the car enthusiast, in mind. Our mission is to simplify the car-buying 
+                 process and empower you with the tools and information you need to make informed decisions.</p>
+            <div class="data">
+            <a href="#" class="btn">Know More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+   
+
+    <!-- subscribe section starts -->
+    <section class="subscribe">
+
+        <h3>subscribe for latest offers and Updates</h3>
+
+        <p>Join with us so you can avail discounts and offers at AUTOBUZZ</p>
+
+        <form action="">
+            <input type="email" placeholder="enter your email">
+
+            <input type="submit" placeholder="subBtn">
+        </form>
+    </section>
+    <!-- subscribe section end -->
+
+
+    <!-- review section starts -->
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading">client's <span>review</span></h1>
+
+        <div class="review-slider">
+            <div class="fa-solid fa-angle-left rPreNext" id="rPreBtn"></div>
+            <div class="review-wrapper">
+
+                <div class="review-wrapper-box">
+
+                    <div class="box active">
+                        <img src="./img/img1.png" alt="">
+                        <div class="content">
+                            <p>"I had an amazing experience with the AutoBuzz. The search filters made it so 
+                                easy to find the perfect car for my needs. The detailed listings and 
+                                photos helped me make an informed decision."</p>
+                            <h3>Sarah Devis</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/img2.png" alt="">
+                        <div class="content">
+                            <p>"I've been on the hunt for a new car for weeks, and this website 
+                                made the process a breeze. The user-friendly interface and helpful 
+                                customer service made me feel confident in my choice.</p>
+                            <h3>JohnDoe_42</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/img3.png" alt="">
+                        <div class="content">
+                            <p>"As a car enthusiast, I'm always on the lookout for the latest deals 
+                                and models. This website has become my go-to place for car shopping.Thanks Guys!!</p>
+                            <h3>CarEnthusiast56</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/img4.png" alt="">
+                        <div class="content">
+                            <p>"I was initially skeptical about buying a car online, but this website changed 
+                                my mind. The transparency in pricing and vehicle history reports gave me peace of mind.</p>
+                            <h3>Emily_Wheels</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/img5.png" alt="">
+                        <div class="content">
+                            <p> "This website is a game-changer! I was dreading the car-buying process, but their platform 
+                                simplified everything. I found a great deal on a reliable car. </p>
+                            <h3>HappyCamper2023</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./img/img6.png" alt="">
+                        <div class="content">
+                            <p>"I needed a new car fast, and this website delivered. I found a car that met my budget and 
+                                needs within hours of signing up.Thank you for the service !!!</p>
+                            <h3>JoeDriver</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fa-solid fa-angle-right rPreNext" id="rNextBtn"></div>
+
+            <div class="rActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+        </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <iframe class="map"
+            src="https://maps.google.com/maps?width=642&amp;height=494&amp;hl=en&amp;q=Rajkot&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea class="box" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="footer-box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Gujarat</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Rajasthan</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Maharashtra</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Punjab/Haryana</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Delhi - NCR</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fa-solid fa-arrow-right"></i> home</a>
+                <a href="#vehicles"><i class="fa-solid fa-arrow-right"></i> Cars</a>
+                <a href="#services"><i class="fa-solid fa-arrow-right"></i> Services</a>
+                <a href="#featured"><i class="fa-solid fa-arrow-right"></i> Top Selling</a>
+                <a href="#parts"><i class="fa-solid fa-arrow-right"></i> Parts</a>
+                <a href="#about"><i class="fa-solid fa-arrow-right"></i> About Us</a>
+                <a href="#reviews"><i class="fa-solid fa-arrow-right"></i> Reviews</a>
+                <a href="#contact"><i class="fa-solid fa-arrow-right"></i> Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i> +91-9924211055</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +91-9328684603</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> autobuzz2023@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Rajkot, Gujarat</a>
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i> pinterest</a>
+            </div>
+
+        </div>
+        
+        <div class="copyright">copyright &copy; Krish Dobariya | all rights reserved</div>
+    </section>
+    <!-- footer section end -->
+
+
+
+<script src="new.js"></script>
+
+
+</body>
+</html>
+
+
